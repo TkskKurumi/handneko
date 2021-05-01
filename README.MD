@@ -1,0 +1,1 @@
+![sample](https://github.com/TkskKurumi/handneko/raw/main/sample.gif)
