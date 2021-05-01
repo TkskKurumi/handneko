@@ -1,19 +1,12 @@
-import PIL,os,math,random,re,copy,emoji2pic,dataStruct,mymath
+import PIL,os,math,random,re,copy,mymath
 from PIL import Image,ImageFile,ImageFont,ImageDraw,ImageColor
 from os import path
 from functools import cmp_to_key
 from glob import glob
 from PIL import ImageFilter
-from mytimer import *
 import numpy as np
 import cv2
-#一坨乱七八糟的图片处理的东西，写不动注释（
-#文件建立之初是小图片按颜色组成大图片的功能，比如说minecraft像素画，后来我大部分图片处理相关都写这里了
-#ImageLib是存放一组图的类
-
-#制作bot pixiv那样多图列表函数在128行
-
-#a=Image.new('RGBA',(233,233))
+#一坨乱七八糟的图片处理的东西
 def resize_by_ratio(img,size_ratio,resampling=Image.LANCZOS):
 	w,h=img.size
 	w,h=int(w*size_ratio),int(h*size_ratio)

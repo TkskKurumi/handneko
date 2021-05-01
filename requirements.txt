@@ -1,0 +1,4 @@
+pillow
+pygame
+numpy
+opencv-python
